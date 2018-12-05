@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
 	DsrHelper Dsr_Normal, Dsr_Malicous;
 	DsrMainHelper DsrMain;
 	Dsr_Normal.Set("isMalicious",UintegerValue(0));
-	Dsr_Malicous.Set("isMalicious", UintegerValue(0));
+	Dsr_Malicous.Set("isMalicious", UintegerValue(1)); //You can set '1' or '2' to choose a type
 	stack.Install(nodeall);
 	stack.Install(maliciousNode);
 	DsrMain.Install(Dsr_Normal, nodeall);
